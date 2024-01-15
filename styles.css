@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
 
-
+:root{
+    --primary-color: #FF5400;
+}
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +31,7 @@ nav{
     font-size: 35px;
 }
 .logo-color{
-    color: #FF5400;
+    color: var(--primary-color);
 }
 .nav-container{
     width: 50%;
@@ -45,6 +47,9 @@ nav{
 .nav-container ul li{
     list-style: none;
 }
+.nav-container ul li .home{
+    color: var(--primary-color);
+}
 
 .nav-container ul li a{
     text-decoration: none;
@@ -56,9 +61,105 @@ nav{
     max-width: 1170px;
     height: 500px;
     margin: 30px auto;
+    text-align: center;
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url('Images/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+}
+.banner h2{
+    padding-top: 106px;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+.banner p{
+    margin: 24px 247px 48px 247px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.banner-btns{
+    max-width: 800px;
+    min-height: 80px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.banner-btns form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-btns form #placename,#time,#submit-btn
+{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+}
+#placename{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+
+}
+#time{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+#submit-btn{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+
+/* Mobile device */
+@media screen and (max-width:600px) {
+    nav{
+        max-width: 335px;
+        margin: 10px auto;
+        flex-direction: column;
+    
+    }
+    .banner{
+        max-width: 335px;
+        height: 483px;
+        margin: 12px auto;
+        text-align: center;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url('Images/banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+    }
+    .banner h2{
+        padding-top: 32px;
+        font-size: 22px;
+    }
+    .banner p{
+        margin: 12px 16px 22px 16px;
+        font-size: 14px;
+    }
+    .banner-btns{
+        max-width: 287px;
+        min-height: 260px;
+        
+    }
+    .banner-btns form{
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+        gap:16px;
+    }
+    
 }
