@@ -283,8 +283,35 @@ nav{
      object-fit: cover;
 }
 /* second section close */
-
-
+/* third section start */
+.third-section{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.third-sec-container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.hotel,.service,.best-price{
+    border: 1px solid red;
+    max-width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    
+}
+.service{
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+.hotel img,.service img,.best-price img{
+    width: 69px;
+    height: 75px;
+}
+/* third section close */
 
 /* Mobile device */
 @media screen and (max-width:600px) {
