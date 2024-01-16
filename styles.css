@@ -548,7 +548,8 @@ footer{
     font-size: 32px;
 }
 .footer-text{
-    width: 769px;
+    width:40%;
+    max-width: 769px;
     margin-left: 335px;
     color: #5A5A5D;
     text-align: center;
@@ -863,7 +864,8 @@ footer{
 }
 
 }
-    
+  
+
     
     
 
